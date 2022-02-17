@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+}
+
+/* navbar */
+.nav {
+  width: 60%;
+  text-align: center;
+  margin: 10px;
+  z-index: 1;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  background: #233732;
+  border-radius: 30px;
+  box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, .2);
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  padding-inline: 20px;
+}
+
+.nav ul li .nav-link {
+  text-decoration: none;
+  color: #ccc;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.nav ul li .nav-link:hover {
+  background: #ccc;
+  color: #233732
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #233732;
+  margin-bottom: -1px;
+}
+
+.deskripsi{
+  max-width: 700px;
+}
+
+.deskripsi h1{
+  font-size: 3em;
+  color: #fff;
+}
+
+.deskripsi span{
+  color: yellow;
+}
+
+.deskripsi p{
+  font-size: 1em;
+  color: #fff;
+}
+
+.tombol a{
+  background: #69CDA0;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #233732;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+  max-width: 700px;
+}
+
+.tombol a:hover{
+  background-color: yellow;
+  color: #000;
+}
+
+.deskripsi .icon i{
+  padding-inline: 10px;
+  font-size: 25px;
+  color: #ccc;
+}
+
+.deskripsi .icon i:hover {
+  transform: scale(1.5);
+}
+
+.jumbotron{
+  background-color: #F3F3F3;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* mata */
+
+.bola {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.bola .eye {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: block;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #544b4b, inset 0 0 25px #544b4b;
+}
+
+.bola .eye::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+}
+
+/* section */
+
+section{
+  width: 100%;
+}
+
+.container{
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill{
+  width: 30%;
+}
+
+.skill h2{
+  margin-bottom: 10px;
+}
+
+.skill p{
+  color: #616161;
+}
+
+.nganan{
+  text-align: right;
+}
+
+.skill img{
+  width: 100%;
+}
+
+/* main */
+main{
+  width: 100%;
+  margin-top: -2rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.contact .card{
+  width: 15em;
+  box-shadow: 0 0px 0px rgba(1 1 1 / 15%);
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  background-color: #f3f3f3;
+}
+
+.projects .content{
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+.project-card:hover {
+ transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img{
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 0.5rem;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.tKanan{
+  text-align: right;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.more-details:hover {
+  color: #601cfc;
+}
+
+.contact .icon{
+  font-size: 4.5em;
+  color: #233732;
+}
+
+.contact .info h3 {
+  color: #000;
+}
+
+.contact{
+  min-height: 80vh;
+}
+
+.contact .info p {
+  font-size: 1em;
+}
+
+/* footer */
+.footer {
+  background-color: #233732;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: yellow;
+}
+
+.footer .social-icons a{
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  color: #69CDA0;
+}
+
+
+@media (max-width: 900px){
+    section .container{
+        grid-template-columns: 1fr;
+    }
+    header{
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+  .deskripsi h1{
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  .deskripsi p{
+    font-size: 14px;
+  }
+  .tombol a{
+    padding: 5px 10px;
+    margin: 20px 0;
+  }
+  .deskripsi .icon i{
+    font-size: 20px;
+  }
+  .deskripsi .icon{
+    margin-left: 85px;
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 600px){ 
+  header{
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+  .deskripsi h1{
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  .deskripsi p{
+    font-size: 14px;
+  }
+  .tombol a{
+    padding: 5px 10px;
+    margin: 20px 0;
+  }
+  .deskripsi .icon i{
+    font-size: 20px;
+  }
+  .nav{
+    width: 95%
+  }
+  .bottom-nav {
+    position: absolute;
+    top: 0;
+  }
+  .nav ul li{
+    font-size: .8rem;
+    padding: 5px;
+  }
+  .bola .eye{
+    width: 80px;
+    height: 80px;
+    margin:  10px;
+  }
+  .bola{
+    margin-left: 0;
+  }
+  .bola .eye::before{
+    width: 26px;
+    height: 26px;
+  }
+
+  .skill{
+    width: 100%;
+  }
+  .nganan{
+    text-align: left;
+  }
+  .skill p{
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  footer{
+      font-size: 12px;
+  }
+}
